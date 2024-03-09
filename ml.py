@@ -6,7 +6,7 @@ import io
 import tensorflow as tf
 from fastapi import HTTPException
 
-model = tf.keras.models.load_model('model/fer.h5')
+model = tf.keras.models.load_model('./model/fer.h5')
 
 
 async def preprocess_image(image_path):
